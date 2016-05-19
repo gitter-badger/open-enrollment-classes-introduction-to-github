@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>About this Site</title>
+  <meta name="description" content="A place to log every corner of the world with an <i class='fa fa-github-alt'></i>
+" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@githubtraining" />
+    <meta name="twitter:title" content="About this Site" />
+    <meta name="twitter:image" content="http://githubteacher.github.io/assets/images/benevocats.png" />
+    
+    <meta name="twitter:description" content="A place to log every corner of the world with an " />
+    
+  
+
+  <meta property="og:site_name" content="Travel Around the World With GitHub" />
+  <meta property="og:title" content="About this Site"/>
+  
+  <meta property="og:description" content="A place to log every corner of the world with an " />
+  
+  <meta property="og:image" content="/travel-log/assets/images/benevocats.png" />
+  <meta property="og:url" content="http://githubteacher.github.io/travel-log/about/" >
+  <meta property="og:type" content="blog" />
+  
+
+  <link rel="canonical" href="http://githubteacher.github.io/travel-log/about/"/>
+  <link rel="shortcut icon" href="/travel-log/assets/images/favicon.png" type="image/png"/>
+  <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/travel-log/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/travel-log/css/print.css" />
+</head>
+
+  <body itemscope itemtype="http://schema.org/Article">
+    <!-- header start -->
+
+<a href="/travel-log/" class="logo-readium"><span class="logo" style="background-image: url(/travel-log//assets/images/benevocats.png)"></span></a>
+
+<!-- header end -->
+
+    <main class="content" role="main">
+      <article class="post">
+        
+        <div class="noarticleimage">
+          <div class="post-meta">
+            <h1 class="post-title">About this Site</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url()">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <section class="post-content">
+          <a name="topofpage"></a>
+          <p><strong>NOTE: This page needs a more inspiring write-up. Any takers?</strong></p>
+
+<p>This site is a collaboration between the GitHub Training Team and anyone that wants to learn
+how to use Git and GitHub.</p>
+
+<p>The site’s <a href="../index.html">main page</a> is a collection of where each person that’s taken our training courses lives.</p>
+
+<p>We invite you to add yourself to the map by (following our self-paced lesson){REQUIRES LINK TO LESSON}.</p>
+
+        </section>
+      </article>
+    </main>
+    <div class="bottom-closer">
+      <div class="background-closer-image" >
+        Image
+      </div>
+      <div class="inner">
+        <h1 class="blog-title">Travel Around the World With GitHub</h1>
+        <h2 class="blog-description">A place to log every corner of the world with an <i class='fa fa-github-alt'></i>
+</h2>
+        <a href="/travel-log/" class="btn">Back to Overview</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/travel-log/assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/travel-log/assets/js/index.js"></script>
+<script type="text/javascript" src="/travel-log/assets/js/readingTime.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+  $(document).ready(function(){
+
+    var $window = $(window),
+    $image = $('.post-image-image, .teaserimage-image');
+
+      $window.on('scroll', function() {
+        var top = $window.scrollTop();
+
+        if (top < 0 || top > 1500) { return; }
+        $image
+          .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+          .css('opacity', 1-Math.max(top/700, 0));
+      });
+      $window.trigger('scroll');
+
+      var height = $('.article-image').height();
+      $('.post-content').css('padding-top', height + 'px');
+
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({ scrollTop: target.offset().top }, 500);
+            return false;
+          }
+        }
+      });
+
+  });
+}(jQuery));
+</script>
+<script>
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    //$("#YT").fitVids();
+    $("#YT").fitVids({ customSelector: "iframe[src^='https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/githubtraining/travel-log/master/class-pins.topojson']"});
+
+  });
+</script>
+
+  </body>
+</html>

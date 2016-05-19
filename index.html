@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="teaserimage">
+    <div class="teaserimage-image">
+      <div id="YT">
+      <iframe height='420' width='620' frameborder='0' src='https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/githubtraining/travel-log/master/class-pins.topojson' title='class-pins.topojson'></iframe>
+      </div>
+    </div>
+</div>
+
+<header class="blog-header">
+    {% if site.logo %}
+      <a class="blog-logo" href="{{site.baseurl}}/" style="background-image: url('{{ site.baseurl}}/{{ site.logo }}')">{{ site.title }}</a>
+    {% endif %}
+    <h1 class="blog-title">{{ site.title }}</h1>
+    <h2 class="blog-description">{{ site.description }}</h2>
+    <div class="custom-links">
+      <a href="about/">About this Site</a>
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      {% for social in site.social %}
+        {% if social.url %}
+            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
+              <i class="fa fa-{{ social.icon }}"></i>
+            </a>
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+        {% endif %}
+      {% endfor %}
+      <a href="add-your-pin/">Add Your Pin</a>
+    </div>
+</header>
